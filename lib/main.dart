@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:service_provider_app/home/home_page.dart';
+import 'package:service_provider_app/pages/book_page.dart';
+import 'package:service_provider_app/pages/bottomnav.dart';
+import 'package:service_provider_app/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: Bottomnav(),
     );
   }
 }
