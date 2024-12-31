@@ -12,7 +12,7 @@ class _BookPageState extends State<BookPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: EdgeInsets.only(left: 20.0, top: 40.0, right: 20.0),
+        margin: const EdgeInsets.only(left: 20.0, top: 40.0, right: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -21,21 +21,21 @@ class _BookPageState extends State<BookPage> {
                 Navigator.pop(context);
               },
               child: Container(
-                padding: EdgeInsets.all(5.0),
+                padding: const EdgeInsets.all(5.0),
                 decoration: BoxDecoration(
-                    color: Color(0xff284a79),
+                    color: const Color(0xff284a79),
                     borderRadius: BorderRadius.circular(10.0)),
-                child: Icon(
+                child: const Icon(
                   Icons.arrow_back_ios_new_outlined,
                   color: Colors.white,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Container(
-              padding: EdgeInsets.only(left: 10.0, top: 10.0),
+              padding: const EdgeInsets.only(left: 10.0, top: 10.0),
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 gradient: const LinearGradient(colors: [
@@ -69,13 +69,13 @@ class _BookPageState extends State<BookPage> {
                           ),
                         ],
                       ),
-                      SizedBox(width: 50.0),
+                      const SizedBox(width: 50.0),
                       Container(
-                        padding: EdgeInsets.all(6.0),
+                        padding: const EdgeInsets.all(6.0),
                         decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(9.0)),
-                        child: Text(
+                        child: const Text(
                           '\$25/Hour',
                           style: TextStyle(
                             color: Color(0xff284a79),
@@ -86,7 +86,7 @@ class _BookPageState extends State<BookPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Row(
@@ -97,7 +97,7 @@ class _BookPageState extends State<BookPage> {
                         child: Image.asset(
                           'images/girl.jpg',
                           height: 180,
-                          width: 140,
+                          width: 115,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -106,7 +106,7 @@ class _BookPageState extends State<BookPage> {
                         child: Image.asset(
                           'images/cleaning2.jpg',
                           height: 180,
-                          width: 140,
+                          width: 115,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -115,30 +115,30 @@ class _BookPageState extends State<BookPage> {
                         child: Image.asset(
                           'images/cleaning1.jpeg',
                           height: 180,
-                          width: 140,
+                          width: 115,
                           fit: BoxFit.cover,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
-            // Text(
-            //   'A Home Cleaner, or a Residential Cleaner, provides cleaning services to homeowners. Their primary duties include cleaning parts of a home, maintaining furniture, fixtures, tools and appliances, and responding to cleaning requests from homeowners.',
-            //   style: TextStyle(
-            //     color: Color(0xff284a79),
-            //     fontSize: 15.0,
-            //     fontWeight: FontWeight.w500,
-            //   ),
-            // ),
-            SizedBox(
+            Text(
+              'A Home Cleaner, or a Residential Cleaner, provides cleaning services to homeowners. Their primary duties include cleaning parts of a home, maintaining furniture, fixtures, tools and appliances, and responding to cleaning requests from homeowners.',
+              style: TextStyle(
+                color: Color(0xff284a79),
+                fontSize: 15.0,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(
               height: 10.0,
             ),
             Row(
@@ -147,20 +147,20 @@ class _BookPageState extends State<BookPage> {
                   elevation: 3.0,
                   borderRadius: BorderRadius.circular(10.0),
                   child: Container(
-                      padding: EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10.0)),
-                      child: Icon(
+                      child: const Icon(
                         Icons.alarm,
                         color: Colors.black,
                         size: 30.0,
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
-                Text(
+                const Text(
                   '10:00 AM',
                   style: TextStyle(
                     color: Color(0xff284a79),
@@ -170,7 +170,7 @@ class _BookPageState extends State<BookPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Row(
@@ -179,20 +179,20 @@ class _BookPageState extends State<BookPage> {
                   elevation: 3.0,
                   borderRadius: BorderRadius.circular(10.0),
                   child: Container(
-                      padding: EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10.0)),
-                      child: Icon(
+                      child: const Icon(
                         Icons.calendar_month,
                         color: Colors.black,
                         size: 30.0,
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
-                Text(
+                const Text(
                   '15-11-2024',
                   style: TextStyle(
                     color: Color(0xff284a79),
@@ -202,16 +202,16 @@ class _BookPageState extends State<BookPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Container(
-              padding: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
-                  color: Color(0xff284a79),
+                  color: const Color(0xff284a79),
                   borderRadius: BorderRadius.circular(10.0)),
               width: MediaQuery.of(context).size.width,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Book Now',
                   style: TextStyle(

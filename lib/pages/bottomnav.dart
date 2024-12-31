@@ -26,10 +26,10 @@ class _BottomnavState extends State<Bottomnav> {
   void initState() {
     // TODO: implement initState
 
-    homePage = HomePage();
-    order = Order();
-    chatPage = ChatPage();
-    profile = Profile();
+    homePage = const HomePage();
+    order = const Order();
+    chatPage = const ChatPage();
+    profile = const Profile();
 
     pages = [homePage, order, chatPage, profile];
   }
@@ -41,7 +41,7 @@ class _BottomnavState extends State<Bottomnav> {
           height: 60.0,
           backgroundColor: Colors.white,
           color: Colors.black,
-          animationDuration: Duration(milliseconds: 500),
+          animationDuration: const Duration(milliseconds: 500),
           onTap: (int index) {
             setState(() {
               currentTabIndex = index;

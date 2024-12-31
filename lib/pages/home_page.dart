@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Container(
               padding:
-                  const EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+                  const EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                   gradient: LinearGradient(colors: [
@@ -225,7 +225,8 @@ class _HomePageState extends State<HomePage> {
               height: 10.0,
             ),
             Container(
-              padding: EdgeInsets.only(left: 10.0, top: 10.0, bottom: 10.0),
+              padding:
+                  const EdgeInsets.only(left: 10.0, top: 10.0, bottom: 10.0),
               margin: const EdgeInsets.only(left: 20.0, right: 20.0),
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
@@ -250,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.star,
@@ -269,10 +270,10 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
-                      Text(
+                      const Text(
                         'Home Cleaning',
                         style: TextStyle(
                           color: Color(0xff284a79),
@@ -280,7 +281,7 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'by Shivanjali Sharma',
                         style: TextStyle(
                           color: Color(0xff284a79),
@@ -288,13 +289,13 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.all(5.0),
+                            padding: const EdgeInsets.all(5.0),
                             width: 100.0,
                             decoration: BoxDecoration(
                               color: const Color.fromARGB(255, 96, 134, 150),
@@ -319,11 +320,11 @@ class _HomePageState extends State<HomePage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => BookPage()));
+                                      builder: (context) => const BookPage()));
                             },
                             child: Container(
                               width: 100.0,
-                              padding: EdgeInsets.all(5.0),
+                              padding: const EdgeInsets.all(5.0),
                               decoration: BoxDecoration(
                                 color: const Color.fromARGB(255, 4, 18, 24),
                                 borderRadius: BorderRadius.circular(5),
@@ -347,11 +348,12 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Container(
-              padding: EdgeInsets.only(left: 10.0, top: 10.0, bottom: 10.0),
+              padding:
+                  const EdgeInsets.only(left: 10.0, top: 10.0, bottom: 10.0),
               margin: const EdgeInsets.only(left: 20.0, right: 20.0),
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
@@ -376,7 +378,7 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.star,
@@ -395,10 +397,10 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
-                      Text(
+                      const Text(
                         'Painting',
                         style: TextStyle(
                           color: Color(0xff284a79),
@@ -406,7 +408,7 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'by Raj Sharma',
                         style: TextStyle(
                           color: Color(0xff284a79),
@@ -414,13 +416,13 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.all(5.0),
+                            padding: const EdgeInsets.all(5.0),
                             width: 100.0,
                             decoration: BoxDecoration(
                               color: const Color.fromARGB(255, 96, 134, 150),
@@ -442,7 +444,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Container(
                             width: 100.0,
-                            padding: EdgeInsets.all(5.0),
+                            padding: const EdgeInsets.all(5.0),
                             decoration: BoxDecoration(
                               color: const Color.fromARGB(255, 4, 18, 24),
                               borderRadius: BorderRadius.circular(5),
